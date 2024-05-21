@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ATKCamera.qml</file>
+        <file>ATKCamera_Window.qml</file>
+        <file>MoreCamera.qml</file>
+    </qresource>
+</RCC>

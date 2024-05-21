@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/gyro_icon.png</file>
+        <file>icons/als_icon.png</file>
+    </qresource>
+</RCC>

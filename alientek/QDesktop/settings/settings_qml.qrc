@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Settings.qml</file>
+        <file>Settings_Window.qml</file>
+        <file>MyDevice.qml</file>
+        <file>MainPage.qml</file>
+        <file>BrightnessVolume.qml</file>
+    </qresource>
+</RCC>

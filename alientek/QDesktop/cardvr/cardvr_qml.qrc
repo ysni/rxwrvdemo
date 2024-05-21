@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Cardvr.qml</file>
+        <file>Cardvr_Window.qml</file>
+    </qresource>
+</RCC>

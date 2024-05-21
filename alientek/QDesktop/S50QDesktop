@@ -1,0 +1,23 @@
+source /etc/profile
+case "$1" in
+  start)
+        echo "Starting QDesktop..."
+        /demo/QDesktop -platform linuxfb 2>&1 >/dev/null &
+        ;;
+  stop)
+        echo "Stopping QDesktop..."
+        killall $(pidof QDesktop)
+        ;;
+  reload|force-reload)
+        echo "Reloading QDesktop configuration..."
+        "$0" reload
+        ;;
+  restart)
+        "$0" stop
+        sleep 1 # Prevent race condition: ensure QDesktop stops before start.
+        "$0" start
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart|reload|force-reload}"
+esac
+exit 0

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Iotest_Window.qml</file>
+        <file>Iotest.qml</file>
+    </qresource>
+</RCC>

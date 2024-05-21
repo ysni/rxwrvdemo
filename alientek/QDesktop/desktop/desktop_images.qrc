@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/gril.png</file>
+        <file>images/desktop_bg.jpeg</file>
+        <file>icons/btn_icons/btn_back_gray.png</file>
+        <file>icons/btn_icons/btn_back_white.png</file>
+        <file>icons/btn_icons/btn_home_gray.png</file>
+        <file>icons/btn_icons/btn_home_white.png</file>
+        <file>icons/btn_icons/btn_threeh_white.png</file>
+        <file>icons/btn_icons/btn_threeh_gray.png</file>
+        <file>images/appinit_images/music.jpeg</file>
+        <file>images/appinit_images/camera.jpeg</file>
+        <file>images/appinit_images/vdecplayer.jpeg</file>
+    </qresource>
+</RCC>

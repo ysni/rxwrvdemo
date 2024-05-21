@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FileView.qml</file>
+        <file>FileView_Window.qml</file>
+    </qresource>
+</RCC>

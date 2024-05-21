@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Music.qml</file>
+        <file>PlayList.qml</file>
+        <file>Lyric.qml</file>
+        <file>PlayPanel.qml</file>
+        <file>CircleView.qml</file>
+        <file>CD.qml</file>
+        <file>MiddleItem.qml</file>
+        <file>Music_Window.qml</file>
+    </qresource>
+</RCC>

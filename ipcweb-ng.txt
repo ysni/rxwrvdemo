@@ -1,0 +1,652 @@
+ipcweb-ng
+├── LICENSE
+├── README.md
+├── angular.json
+├── browserslist
+├── e2e
+│   ├── protractor.conf.js
+│   ├── src
+│   │   ├── app.e2e-spec.ts
+│   │   └── app.po.ts
+│   └── tsconfig.json
+├── extra-webpack.config.js
+├── karma.conf.js
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── about
+│   │   │   ├── about.component.html
+│   │   │   ├── about.component.scss
+│   │   │   ├── about.component.spec.ts
+│   │   │   └── about.component.ts
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── auth
+│   │   │   ├── auth-routing.module.ts
+│   │   │   ├── auth.guard.spec.ts
+│   │   │   ├── auth.guard.ts
+│   │   │   ├── auth.module.ts
+│   │   │   ├── auth.service.prod.ts
+│   │   │   ├── auth.service.spec.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── login
+│   │   │   │   ├── LoginInterface.ts
+│   │   │   │   ├── login.component.html
+│   │   │   │   ├── login.component.scss
+│   │   │   │   ├── login.component.spec.ts
+│   │   │   │   └── login.component.ts
+│   │   │   └── user.ts
+│   │   ├── config
+│   │   │   ├── MenuGroup.ts
+│   │   │   ├── NetworkInterface.ts
+│   │   │   ├── config-audio
+│   │   │   │   ├── AudioInterface.ts
+│   │   │   │   ├── config-audio.component.html
+│   │   │   │   ├── config-audio.component.scss
+│   │   │   │   ├── config-audio.component.spec.ts
+│   │   │   │   └── config-audio.component.ts
+│   │   │   ├── config-event
+│   │   │   │   ├── config-event.component.html
+│   │   │   │   ├── config-event.component.scss
+│   │   │   │   ├── config-event.component.spec.ts
+│   │   │   │   └── config-event.component.ts
+│   │   │   ├── config-image
+│   │   │   │   ├── config-image.component.html
+│   │   │   │   ├── config-image.component.scss
+│   │   │   │   ├── config-image.component.spec.ts
+│   │   │   │   └── config-image.component.ts
+│   │   │   ├── config-intel
+│   │   │   │   ├── config-intel.component.html
+│   │   │   │   ├── config-intel.component.scss
+│   │   │   │   ├── config-intel.component.spec.ts
+│   │   │   │   └── config-intel.component.ts
+│   │   │   ├── config-network
+│   │   │   │   ├── config-network.component.html
+│   │   │   │   ├── config-network.component.scss
+│   │   │   │   ├── config-network.component.spec.ts
+│   │   │   │   └── config-network.component.ts
+│   │   │   ├── config-routing.module.ts
+│   │   │   ├── config-storage
+│   │   │   │   ├── config-storage.component.html
+│   │   │   │   ├── config-storage.component.scss
+│   │   │   │   ├── config-storage.component.spec.ts
+│   │   │   │   └── config-storage.component.ts
+│   │   │   ├── config-system
+│   │   │   │   ├── config-system.component.html
+│   │   │   │   ├── config-system.component.spec.ts
+│   │   │   │   └── config-system.component.ts
+│   │   │   ├── config-video
+│   │   │   │   ├── config-video.component.html
+│   │   │   │   ├── config-video.component.scss
+│   │   │   │   ├── config-video.component.spec.ts
+│   │   │   │   └── config-video.component.ts
+│   │   │   ├── config.component.html
+│   │   │   ├── config.component.scss
+│   │   │   ├── config.component.spec.ts
+│   │   │   ├── config.component.ts
+│   │   │   ├── config.module.ts
+│   │   │   ├── peripherals
+│   │   │   │   ├── peripherals.component.html
+│   │   │   │   ├── peripherals.component.scss
+│   │   │   │   ├── peripherals.component.spec.ts
+│   │   │   │   └── peripherals.component.ts
+│   │   │   └── shared
+│   │   │       ├── abnormal
+│   │   │       │   ├── abnormal.component.html
+│   │   │       │   ├── abnormal.component.scss
+│   │   │       │   ├── abnormal.component.spec.ts
+│   │   │       │   └── abnormal.component.ts
+│   │   │       ├── advanced-encoder
+│   │   │       │   ├── AdvancedEncoderInterface.ts
+│   │   │       │   ├── advanced-encoder.component.html
+│   │   │       │   ├── advanced-encoder.component.scss
+│   │   │       │   ├── advanced-encoder.component.spec.ts
+│   │   │       │   └── advanced-encoder.component.ts
+│   │   │       ├── alarm-input
+│   │   │       │   ├── alarm-input.component.html
+│   │   │       │   ├── alarm-input.component.scss
+│   │   │       │   ├── alarm-input.component.spec.ts
+│   │   │       │   └── alarm-input.component.ts
+│   │   │       ├── alarm-output
+│   │   │       │   ├── alarm-output.component.html
+│   │   │       │   ├── alarm-output.component.scss
+│   │   │       │   ├── alarm-output.component.spec.ts
+│   │   │       │   └── alarm-output.component.ts
+│   │   │       ├── cloud
+│   │   │       │   ├── cloud.component.html
+│   │   │       │   ├── cloud.component.spec.ts
+│   │   │       │   └── cloud.component.ts
+│   │   │       ├── ddns
+│   │   │       │   ├── ddns.component.html
+│   │   │       │   ├── ddns.component.spec.ts
+│   │   │       │   └── ddns.component.ts
+│   │   │       ├── email
+│   │   │       │   ├── email.component.html
+│   │   │       │   ├── email.component.spec.ts
+│   │   │       │   └── email.component.ts
+│   │   │       ├── encoder-param
+│   │   │       │   ├── VideoEncoderInterface.ts
+│   │   │       │   ├── encoder-param.component.html
+│   │   │       │   ├── encoder-param.component.scss
+│   │   │       │   ├── encoder-param.component.spec.ts
+│   │   │       │   └── encoder-param.component.ts
+│   │   │       ├── ftp
+│   │   │       │   ├── FTPInterface.ts
+│   │   │       │   ├── ftp.component.html
+│   │   │       │   ├── ftp.component.scss
+│   │   │       │   ├── ftp.component.spec.ts
+│   │   │       │   └── ftp.component.ts
+│   │   │       ├── gate-config
+│   │   │       │   ├── GateInterface.ts
+│   │   │       │   ├── gate-config.component.html
+│   │   │       │   ├── gate-config.component.scss
+│   │   │       │   ├── gate-config.component.spec.ts
+│   │   │       │   └── gate-config.component.ts
+│   │   │       ├── hard-disk-management
+│   │   │       │   ├── HardDiskManagementInterface.ts
+│   │   │       │   ├── QuotaInterface.ts
+│   │   │       │   ├── hard-disk-management.component.html
+│   │   │       │   ├── hard-disk-management.component.scss
+│   │   │       │   ├── hard-disk-management.component.spec.ts
+│   │   │       │   └── hard-disk-management.component.ts
+│   │   │       ├── info
+│   │   │       │   ├── DeviceInfoInterface.ts
+│   │   │       │   ├── info.component.html
+│   │   │       │   ├── info.component.scss
+│   │   │       │   ├── info.component.spec.ts
+│   │   │       │   └── info.component.ts
+│   │   │       ├── intrusion-detection
+│   │   │       │   ├── IntrusionInterface.ts
+│   │   │       │   ├── intrusion-detection.component.html
+│   │   │       │   ├── intrusion-detection.component.scss
+│   │   │       │   ├── intrusion-detection.component.spec.ts
+│   │   │       │   └── intrusion-detection.component.ts
+│   │   │       ├── intrusion-region
+│   │   │       │   ├── intrusion-region.component.html
+│   │   │       │   ├── intrusion-region.component.scss
+│   │   │       │   ├── intrusion-region.component.spec.ts
+│   │   │       │   └── intrusion-region.component.ts
+│   │   │       ├── isp
+│   │   │       │   ├── ImageInterface.ts
+│   │   │       │   ├── isp.component.html
+│   │   │       │   ├── isp.component.scss
+│   │   │       │   ├── isp.component.spec.ts
+│   │   │       │   └── isp.component.ts
+│   │   │       ├── motion-arming
+│   │   │       │   ├── motion-arming.component.html
+│   │   │       │   ├── motion-arming.component.scss
+│   │   │       │   ├── motion-arming.component.spec.ts
+│   │   │       │   └── motion-arming.component.ts
+│   │   │       ├── motion-detect
+│   │   │       │   ├── motion-detect.component.html
+│   │   │       │   ├── motion-detect.component.scss
+│   │   │       │   ├── motion-detect.component.spec.ts
+│   │   │       │   └── motion-detect.component.ts
+│   │   │       ├── motion-linkage
+│   │   │       │   ├── LinkageInterface.ts
+│   │   │       │   ├── motion-linkage.component.html
+│   │   │       │   ├── motion-linkage.component.scss
+│   │   │       │   ├── motion-linkage.component.spec.ts
+│   │   │       │   └── motion-linkage.component.ts
+│   │   │       ├── motion-region
+│   │   │       │   ├── MotionRegionInterface.ts
+│   │   │       │   ├── motion-region.component.html
+│   │   │       │   ├── motion-region.component.scss
+│   │   │       │   ├── motion-region.component.spec.ts
+│   │   │       │   └── motion-region.component.ts
+│   │   │       ├── ntp
+│   │   │       │   ├── NtpInterface.ts
+│   │   │       │   ├── ntp.component.html
+│   │   │       │   ├── ntp.component.scss
+│   │   │       │   ├── ntp.component.spec.ts
+│   │   │       │   └── ntp.component.ts
+│   │   │       ├── osd
+│   │   │       │   ├── OsdOverplaysInterface.ts
+│   │   │       │   ├── osd.component.html
+│   │   │       │   ├── osd.component.scss
+│   │   │       │   ├── osd.component.spec.ts
+│   │   │       │   └── osd.component.ts
+│   │   │       ├── overlay-snap
+│   │   │       │   ├── OverlaySnapInterface.ts
+│   │   │       │   ├── overlay-snap.component.html
+│   │   │       │   ├── overlay-snap.component.scss
+│   │   │       │   ├── overlay-snap.component.spec.ts
+│   │   │       │   └── overlay-snap.component.ts
+│   │   │       ├── picture-mask
+│   │   │       │   ├── PictureMaskInterface.ts
+│   │   │       │   ├── picture-mask.component.html
+│   │   │       │   ├── picture-mask.component.scss
+│   │   │       │   ├── picture-mask.component.spec.ts
+│   │   │       │   └── picture-mask.component.ts
+│   │   │       ├── port
+│   │   │       │   ├── NetworkPortInterface.ts
+│   │   │       │   ├── port.component.html
+│   │   │       │   ├── port.component.scss
+│   │   │       │   ├── port.component.spec.ts
+│   │   │       │   └── port.component.ts
+│   │   │       ├── pppoe
+│   │   │       │   ├── pppoe.component.html
+│   │   │       │   ├── pppoe.component.spec.ts
+│   │   │       │   └── pppoe.component.ts
+│   │   │       ├── privacy-mask
+│   │   │       │   ├── PrivacyMaskInterface.ts
+│   │   │       │   ├── privacy-mask.component.html
+│   │   │       │   ├── privacy-mask.component.scss
+│   │   │       │   ├── privacy-mask.component.spec.ts
+│   │   │       │   └── privacy-mask.component.ts
+│   │   │       ├── protocol
+│   │   │       │   ├── protocol.component.html
+│   │   │       │   ├── protocol.component.spec.ts
+│   │   │       │   └── protocol.component.ts
+│   │   │       ├── region-crop
+│   │   │       │   ├── RegionCropInterface.ts
+│   │   │       │   ├── region-crop.component.html
+│   │   │       │   ├── region-crop.component.scss
+│   │   │       │   ├── region-crop.component.spec.ts
+│   │   │       │   └── region-crop.component.ts
+│   │   │       ├── roi
+│   │   │       │   ├── RoiInterface.ts
+│   │   │       │   ├── roi.component.html
+│   │   │       │   ├── roi.component.spec.ts
+│   │   │       │   └── roi.component.ts
+│   │   │       ├── screen-config
+│   │   │       │   ├── ScreenCfgInterface.ts
+│   │   │       │   ├── screen-config.component.html
+│   │   │       │   ├── screen-config.component.scss
+│   │   │       │   ├── screen-config.component.spec.ts
+│   │   │       │   └── screen-config.component.ts
+│   │   │       ├── screenshot
+│   │   │       │   ├── ScreenshotInterface.ts
+│   │   │       │   ├── screenshot.component.html
+│   │   │       │   ├── screenshot.component.scss
+│   │   │       │   ├── screenshot.component.spec.ts
+│   │   │       │   └── screenshot.component.ts
+│   │   │       ├── smtp
+│   │   │       │   ├── smtp.component.html
+│   │   │       │   ├── smtp.component.spec.ts
+│   │   │       │   └── smtp.component.ts
+│   │   │       ├── tcpip
+│   │   │       │   ├── tcpip.component.html
+│   │   │       │   ├── tcpip.component.scss
+│   │   │       │   ├── tcpip.component.spec.ts
+│   │   │       │   └── tcpip.component.ts
+│   │   │       ├── time-table
+│   │   │       │   ├── TimeTableInterface.ts
+│   │   │       │   ├── time-table.component.html
+│   │   │       │   ├── time-table.component.scss
+│   │   │       │   ├── time-table.component.spec.ts
+│   │   │       │   └── time-table.component.ts
+│   │   │       ├── upgrade
+│   │   │       │   ├── UpgradeInterface.ts
+│   │   │       │   ├── upgrade.component.html
+│   │   │       │   ├── upgrade.component.scss
+│   │   │       │   ├── upgrade.component.spec.ts
+│   │   │       │   └── upgrade.component.ts
+│   │   │       ├── upnp
+│   │   │       │   ├── upnp.component.html
+│   │   │       │   ├── upnp.component.spec.ts
+│   │   │       │   └── upnp.component.ts
+│   │   │       ├── user-manage
+│   │   │       │   ├── UserInterface.ts
+│   │   │       │   ├── user-manage.component.html
+│   │   │       │   ├── user-manage.component.scss
+│   │   │       │   ├── user-manage.component.spec.ts
+│   │   │       │   └── user-manage.component.ts
+│   │   │       └── wifi
+│   │   │           ├── WifiInfo.ts
+│   │   │           ├── wifi.component.html
+│   │   │           ├── wifi.component.scss
+│   │   │           ├── wifi.component.spec.ts
+│   │   │           └── wifi.component.ts
+│   │   ├── config.service.spec.ts
+│   │   ├── config.service.ts
+│   │   ├── download
+│   │   │   ├── download-contain
+│   │   │   │   ├── DownloadInterface.ts
+│   │   │   │   ├── download-contain.component.html
+│   │   │   │   ├── download-contain.component.scss
+│   │   │   │   ├── download-contain.component.spec.ts
+│   │   │   │   └── download-contain.component.ts
+│   │   │   ├── download-routing.module.ts
+│   │   │   ├── download.component.html
+│   │   │   ├── download.component.scss
+│   │   │   ├── download.component.spec.ts
+│   │   │   ├── download.component.ts
+│   │   │   └── download.module.ts
+│   │   ├── face
+│   │   │   ├── MenuGroup.ts
+│   │   │   ├── control
+│   │   │   │   ├── ControlResultInterface.ts
+│   │   │   │   ├── control.component.html
+│   │   │   │   ├── control.component.spec.ts
+│   │   │   │   └── control.component.ts
+│   │   │   ├── face-config
+│   │   │   │   ├── face-config.component.html
+│   │   │   │   ├── face-config.component.scss
+│   │   │   │   ├── face-config.component.spec.ts
+│   │   │   │   └── face-config.component.ts
+│   │   │   ├── face-routing.module.ts
+│   │   │   ├── face.component.html
+│   │   │   ├── face.component.scss
+│   │   │   ├── face.component.spec.ts
+│   │   │   ├── face.component.ts
+│   │   │   ├── face.module.ts
+│   │   │   ├── json2excel.service.spec.ts
+│   │   │   ├── json2excel.service.ts
+│   │   │   ├── json2xml.service.spec.ts
+│   │   │   ├── json2xml.service.ts
+│   │   │   ├── member-list
+│   │   │   │   ├── member-list.component.html
+│   │   │   │   ├── member-list.component.scss
+│   │   │   │   ├── member-list.component.spec.ts
+│   │   │   │   └── member-list.component.ts
+│   │   │   ├── shared
+│   │   │   │   ├── add-member
+│   │   │   │   │   ├── AddMemberInterface.ts
+│   │   │   │   │   ├── add-member.component.html
+│   │   │   │   │   ├── add-member.component.scss
+│   │   │   │   │   ├── add-member.component.spec.ts
+│   │   │   │   │   └── add-member.component.ts
+│   │   │   │   ├── add-one
+│   │   │   │   │   ├── add-one.component.html
+│   │   │   │   │   ├── add-one.component.scss
+│   │   │   │   │   ├── add-one.component.spec.ts
+│   │   │   │   │   └── add-one.component.ts
+│   │   │   │   ├── batch-input
+│   │   │   │   │   ├── batch-input.component.html
+│   │   │   │   │   ├── batch-input.component.scss
+│   │   │   │   │   ├── batch-input.component.spec.ts
+│   │   │   │   │   └── batch-input.component.ts
+│   │   │   │   ├── click-tip
+│   │   │   │   │   ├── click-tip.component.html
+│   │   │   │   │   ├── click-tip.component.scss
+│   │   │   │   │   ├── click-tip.component.spec.ts
+│   │   │   │   │   └── click-tip.component.ts
+│   │   │   │   ├── downloader.ts
+│   │   │   │   ├── face-page.scss
+│   │   │   │   ├── face-roi
+│   │   │   │   │   ├── face-roi.component.html
+│   │   │   │   │   ├── face-roi.component.scss
+│   │   │   │   │   ├── face-roi.component.spec.ts
+│   │   │   │   │   └── face-roi.component.ts
+│   │   │   │   ├── list-management
+│   │   │   │   │   ├── ListMangementInterface.ts
+│   │   │   │   │   ├── list-management.component.html
+│   │   │   │   │   ├── list-management.component.spec.ts
+│   │   │   │   │   └── list-management.component.ts
+│   │   │   │   └── para-setting
+│   │   │   │       ├── FaceParaInterface.ts
+│   │   │   │       ├── para-setting.component.html
+│   │   │   │       ├── para-setting.component.scss
+│   │   │   │       ├── para-setting.component.spec.ts
+│   │   │   │       └── para-setting.component.ts
+│   │   │   └── snap-shot
+│   │   │       ├── SnapListInterface.ts
+│   │   │       ├── snap-shot.component.html
+│   │   │       ├── snap-shot.component.spec.ts
+│   │   │       └── snap-shot.component.ts
+│   │   ├── face-manage
+│   │   │   ├── face-manage-routing.module.ts
+│   │   │   ├── face-manage.component.html
+│   │   │   ├── face-manage.component.scss
+│   │   │   ├── face-manage.component.spec.ts
+│   │   │   ├── face-manage.component.ts
+│   │   │   ├── face-manage.module.ts
+│   │   │   └── manage-menu
+│   │   │       ├── manage-menu.component.html
+│   │   │       ├── manage-menu.component.scss
+│   │   │       ├── manage-menu.component.spec.ts
+│   │   │       └── manage-menu.component.ts
+│   │   ├── face-para
+│   │   │   ├── detail-para
+│   │   │   │   ├── detail-para.component.html
+│   │   │   │   ├── detail-para.component.scss
+│   │   │   │   ├── detail-para.component.spec.ts
+│   │   │   │   └── detail-para.component.ts
+│   │   │   ├── face-para-routing.module.ts
+│   │   │   ├── face-para.component.html
+│   │   │   ├── face-para.component.scss
+│   │   │   ├── face-para.component.spec.ts
+│   │   │   ├── face-para.component.ts
+│   │   │   └── face-para.module.ts
+│   │   ├── footer
+│   │   │   ├── footer.component.html
+│   │   │   ├── footer.component.scss
+│   │   │   ├── footer.component.spec.ts
+│   │   │   └── footer.component.ts
+│   │   ├── header
+│   │   │   ├── header.component.html
+│   │   │   ├── header.component.scss
+│   │   │   ├── header.component.spec.ts
+│   │   │   └── header.component.ts
+│   │   ├── logger.prod.ts
+│   │   ├── logger.ts
+│   │   ├── preview
+│   │   │   ├── StreamURLInterface.ts
+│   │   │   ├── preview.component.html
+│   │   │   ├── preview.component.scss
+│   │   │   ├── preview.component.spec.ts
+│   │   │   ├── preview.component.ts
+│   │   │   └── ptz.scss
+│   │   ├── shared
+│   │   │   ├── MenuGroup.ts
+│   │   │   ├── func-service
+│   │   │   │   ├── diy-http.service.spec.ts
+│   │   │   │   ├── diy-http.service.ts
+│   │   │   │   ├── employee.service.spec.ts
+│   │   │   │   ├── employee.service.ts
+│   │   │   │   ├── ie-css.service.spec.ts
+│   │   │   │   ├── ie-css.service.ts
+│   │   │   │   ├── img-workshop.service.spec.ts
+│   │   │   │   ├── img-workshop.service.ts
+│   │   │   │   ├── last-nav.service.spec.ts
+│   │   │   │   ├── last-nav.service.ts
+│   │   │   │   ├── layout-cell.ts
+│   │   │   │   ├── layout.service.spec.ts
+│   │   │   │   ├── layout.service.ts
+│   │   │   │   ├── lock-service.service.spec.ts
+│   │   │   │   ├── lock-service.service.ts
+│   │   │   │   ├── public-func.service.spec.ts
+│   │   │   │   ├── public-func.service.ts
+│   │   │   │   ├── response-error.service.spec.ts
+│   │   │   │   └── response-error.service.ts
+│   │   │   ├── player
+│   │   │   │   ├── WXPlayer.ts
+│   │   │   │   ├── player.component.html
+│   │   │   │   ├── player.component.scss
+│   │   │   │   ├── player.component.spec.ts
+│   │   │   │   ├── player.component.ts
+│   │   │   │   ├── player.module.ts
+│   │   │   │   ├── typed-array.d.ts
+│   │   │   │   ├── wxplayer.component.html
+│   │   │   │   ├── wxplayer.component.scss
+│   │   │   │   └── wxplayer.component.ts
+│   │   │   └── validators
+│   │   │       ├── age-compare.directive.spec.ts
+│   │   │       ├── age-compare.directive.ts
+│   │   │       ├── benumber.directive.spec.ts
+│   │   │       ├── benumber.directive.ts
+│   │   │       ├── calculation.directive.spec.ts
+│   │   │       ├── calculation.directive.ts
+│   │   │       ├── confirm-password.directive.spec.ts
+│   │   │       ├── confirm-password.directive.ts
+│   │   │       ├── is-decimal.directive.spec.ts
+│   │   │       ├── is-decimal.directive.ts
+│   │   │       ├── is-ip.directive.spec.ts
+│   │   │       ├── is-ip.directive.ts
+│   │   │       ├── is-ipv4.directive.spec.ts
+│   │   │       ├── is-ipv4.directive.ts
+│   │   │       ├── is-standard-time.directive.spec.ts
+│   │   │       ├── is-standard-time.directive.ts
+│   │   │       ├── pstring32.directive.spec.ts
+│   │   │       ├── pstring32.directive.ts
+│   │   │       ├── time-compare.directive.spec.ts
+│   │   │       └── time-compare.directive.ts
+│   │   └── tips
+│   │       ├── center-tips
+│   │       │   ├── center-tips.component.html
+│   │       │   ├── center-tips.component.scss
+│   │       │   ├── center-tips.component.spec.ts
+│   │       │   └── center-tips.component.ts
+│   │       ├── right-bottom-tips
+│   │       │   ├── right-bottom-tips.component.html
+│   │       │   ├── right-bottom-tips.component.scss
+│   │       │   ├── right-bottom-tips.component.spec.ts
+│   │       │   └── right-bottom-tips.component.ts
+│   │       ├── tips
+│   │       │   ├── tips.component.html
+│   │       │   ├── tips.component.scss
+│   │       │   ├── tips.component.spec.ts
+│   │       │   └── tips.component.ts
+│   │       ├── tips.module.ts
+│   │       ├── tips.service.spec.ts
+│   │       └── tips.service.ts
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── bootstrap-extended.css
+│   │   │   └── ie10-viewport-bug-workaround.css
+│   │   ├── i18n
+│   │   │   ├── en-US.json
+│   │   │   └── zh-CN.json
+│   │   ├── images
+│   │   │   ├── btn_blue_01.9.png
+│   │   │   ├── btn_blue_02.9.png
+│   │   │   ├── btn_red_01.9.png
+│   │   │   ├── btn_red_02.9.png
+│   │   │   ├── face_roi.png
+│   │   │   ├── icon_checkbox_01.png
+│   │   │   ├── icon_checkbox_02.png
+│   │   │   ├── icon_choice_01.png
+│   │   │   ├── icon_choice_02.png
+│   │   │   ├── icon_copy_time_table.png
+│   │   │   ├── icon_play_l_01.png
+│   │   │   ├── icon_play_l_02.png
+│   │   │   ├── icon_stop_l_01.png
+│   │   │   ├── icon_stop_l_02.png
+│   │   │   ├── icon_triangle_s_b_01-12.png
+│   │   │   ├── icon_triangle_s_b_01.png
+│   │   │   ├── icon_triangle_s_b_02-12.png
+│   │   │   ├── icon_triangle_s_b_02.png
+│   │   │   ├── left_icon_a_01.png
+│   │   │   ├── left_icon_a_02.png
+│   │   │   ├── left_icon_b_01.png
+│   │   │   ├── left_icon_b_02.png
+│   │   │   ├── left_icon_c_01.png
+│   │   │   ├── left_icon_c_02.png
+│   │   │   ├── left_icon_d_01.png
+│   │   │   ├── left_icon_d_02.png
+│   │   │   ├── left_icon_e_01.png
+│   │   │   ├── left_icon_e_02.png
+│   │   │   ├── left_icon_f_01.png
+│   │   │   ├── left_icon_f_02.png
+│   │   │   ├── left_icon_g_01.png
+│   │   │   ├── left_icon_g_02.png
+│   │   │   ├── left_icon_h_01.png
+│   │   │   ├── left_icon_h_02.png
+│   │   │   ├── left_icon_i_01.png
+│   │   │   ├── left_icon_i_02.png
+│   │   │   ├── left_icon_j_01.png
+│   │   │   ├── left_icon_j_02.png
+│   │   │   ├── light-on.gif
+│   │   │   ├── m-logo.png
+│   │   │   ├── play_icon_a_01.png
+│   │   │   ├── play_icon_a_02.png
+│   │   │   ├── play_icon_b_01.png
+│   │   │   ├── play_icon_b_02.png
+│   │   │   ├── play_icon_c_01.png
+│   │   │   ├── play_icon_c_02.png
+│   │   │   ├── play_icon_d_01.png
+│   │   │   ├── play_icon_d_02.png
+│   │   │   ├── play_icon_dot.png
+│   │   │   ├── play_icon_e_01.png
+│   │   │   ├── play_icon_e_02.png
+│   │   │   ├── play_icon_f_01.png
+│   │   │   ├── play_icon_f_02.png
+│   │   │   ├── play_icon_h_01.png
+│   │   │   ├── play_icon_h_02.png
+│   │   │   ├── play_icon_i_01.png
+│   │   │   ├── play_icon_i_02.png
+│   │   │   ├── ptz-icons.png
+│   │   │   ├── top_icon_i_01.png
+│   │   │   ├── top_icon_i_02.png
+│   │   │   ├── top_icon_quit_01.png
+│   │   │   ├── top_icon_quit_02.png
+│   │   │   ├── top_icon_user_01.png
+│   │   │   ├── top_icon_user_02.png
+│   │   │   ├── yt_icon_a_01.png
+│   │   │   ├── yt_icon_a_02.png
+│   │   │   ├── yt_icon_b_01.png
+│   │   │   ├── yt_icon_b_02.png
+│   │   │   ├── yt_icon_c_01.png
+│   │   │   ├── yt_icon_c_02.png
+│   │   │   ├── yt_icon_d_01.png
+│   │   │   ├── yt_icon_d_02.png
+│   │   │   ├── yt_icon_e_01.png
+│   │   │   ├── yt_icon_e_02.png
+│   │   │   ├── yt_icon_f_01.png
+│   │   │   ├── yt_icon_f_02.png
+│   │   │   ├── yt_icon_g_01.png
+│   │   │   ├── yt_icon_g_02.png
+│   │   │   ├── yt_icon_h_01.png
+│   │   │   ├── yt_icon_h_02.png
+│   │   │   ├── yt_icon_i_01.png
+│   │   │   ├── yt_icon_i_02.png
+│   │   │   ├── yt_icon_j_01.png
+│   │   │   ├── yt_icon_j_02.png
+│   │   │   ├── yt_icon_k_01.png
+│   │   │   ├── yt_icon_k_02.png
+│   │   │   ├── yt_icon_l_01.png
+│   │   │   ├── yt_icon_l_02.png
+│   │   │   ├── yt_icon_m_01.png
+│   │   │   ├── yt_icon_m_02.png
+│   │   │   ├── yt_icon_n_01.png
+│   │   │   ├── yt_icon_n_02.png
+│   │   │   ├── yt_icon_o_01.png
+│   │   │   ├── yt_icon_o_02.png
+│   │   │   ├── yt_icon_p_01.png
+│   │   │   ├── yt_icon_p_02.png
+│   │   │   ├── yt_icon_q_01.png
+│   │   │   ├── yt_icon_q_02.png
+│   │   │   ├── yt_icon_r_01.png
+│   │   │   ├── yt_icon_r_02.png
+│   │   │   ├── yt_icon_s_01.png
+│   │   │   ├── yt_icon_s_02.png
+│   │   │   ├── yt_icon_t_01.png
+│   │   │   ├── yt_icon_t_02.png
+│   │   │   ├── yt_icon_u_01.png
+│   │   │   └── yt_icon_u_02.png
+│   │   ├── js
+│   │   │   ├── ie-emulation-modes-warning.js
+│   │   │   └── ie10-viewport-bug-workaround.js
+│   │   ├── json
+│   │   │   ├── db.json
+│   │   │   ├── deviceCap
+│   │   │   ├── deviceInfo
+│   │   │   └── face-para.json
+│   │   └── wxplayer
+│   │       ├── prod.all.asm.combine.js
+│   │       ├── prod.all.wasm.combine.js
+│   │       ├── prod.baseline.asm.combine.js
+│   │       ├── prod.baseline.wasm.combine.js
+│   │       ├── prod.h265.asm.combine.js
+│   │       ├── prod.h265.wasm.combine.js
+│   │       ├── wxplayer.d.ts
+│   │       └── wxplayer.js
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.scss
+│   └── test.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+└── tslint.json

@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/btn_previous.png</file>
+        <file>icons/btn_play.png</file>
+        <file>icons/btn_pause.png</file>
+        <file>icons/btn_next.png</file>
+        <file>icons/btn_listsingle.png</file>
+        <file>icons/btn_listscircle_single.png</file>
+        <file>icons/btn_listrandom.png</file>
+        <file>icons/btn_listjump.png</file>
+        <file>icons/btn_favorite_yes.png</file>
+        <file>icons/btn_favorite_no.png</file>
+        <file>icons/btn_close.png</file>
+        <file>icons/btn_playlist.png</file>
+        <file>images/head_image.png</file>
+        <file>images/music_image_1.png</file>
+        <file>images/music_image_2.png</file>
+        <file>images/music_image_3.png</file>
+        <file>images/music_album_1.png</file>
+        <file>images/music_album_2.png</file>
+        <file>images/music_album_3.png</file>
+        <file>images/music_album_4.png</file>
+        <file>images/music_album_5.png</file>
+        <file>images/music_album_6.png</file>
+        <file>icons/down.png</file>
+        <file>images/cd_outside.png</file>
+        <file>icons/previous_button_icon.png</file>
+        <file>icons/next_button_icon.png</file>
+        <file>images/music_mask.png</file>
+        <file>icons/music_play_icon.png</file>
+        <file>images/xusong.jpg</file>
+        <file>icons/music_pause_icon.png</file>
+        <file>icons/music_next_icon.png</file>
+        <file>icons/music_previous_icon.png</file>
+        <file>images/music_album_7.png</file>
+        <file>images/music_album_8.png</file>
+        <file>images/music_album_mask.png</file>
+    </qresource>
+</RCC>

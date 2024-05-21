@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Recorder_Window.qml</file>
+        <file>RecordDelete.qml</file>
+        <file>Recorder.qml</file>
+        <file>RecordListView.qml</file>
+        <file>RecordPlayPanel.qml</file>
+    </qresource>
+</RCC>

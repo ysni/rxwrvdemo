@@ -1,0 +1,38 @@
+$icon-font-path: "~/fonts" !default;   //定义一个变量来指定字体文件的路径，默认值是"~/fonts"。
+@import '~video.js/dist/video-js.css'; //导入video.js视频播放器的CSS样式文件。
+
+@import 'ptz';                         //导入另一个名为ptz的样式文件（可能是一个局部文件或者库）。
+
+.forbid-direction::before {
+    content:'';
+    background-size:30px 30px;
+    width:30px;
+    height:30px;
+    position: absolute;
+    z-index: 32;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.forbid::before {
+    content:'';
+    background-size:37px 28px;
+    width:37px;
+    height:28px;
+    position: absolute;
+    z-index: 32;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.forbid-zo::before {
+    content:'';
+    background-size:36px 30px;
+    width:36px;
+    height:30px;
+    position: relative;
+    z-index: 32;
+    // left: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+

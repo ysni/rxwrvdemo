@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FaceDetection.qml</file>
+        <file>FaceDetection_Window.qml</file>
+    </qresource>
+</RCC>

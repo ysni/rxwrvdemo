@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>WeatherPage2.qml</file>
+        <file>WeatherPage1.qml</file>
+        <file>Weather.qml</file>
+        <file>Weather_Window.qml</file>
+        <file>WeatherPage3.qml</file>
+    </qresource>
+</RCC>

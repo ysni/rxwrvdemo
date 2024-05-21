@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Live555_Windows.qml</file>
+        <file>Live555.qml</file>
+    </qresource>
+</RCC>

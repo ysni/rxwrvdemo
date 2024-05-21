@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/notepad_back_icon.png</file>
+        <file>icons/pen_icon.png</file>
+    </qresource>
+</RCC>

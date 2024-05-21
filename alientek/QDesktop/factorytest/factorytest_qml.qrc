@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FactoryTest_Window.qml</file>
+        <file>FactoryTest.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>VdecPlayer.qml</file>
+        <file>VdecPlayer_Window.qml</file>
+    </qresource>
+</RCC>

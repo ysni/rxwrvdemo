@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Sensor_Window.qml</file>
+        <file>Sensor.qml</file>
+    </qresource>
+</RCC>

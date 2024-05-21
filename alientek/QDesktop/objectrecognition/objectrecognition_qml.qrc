@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ObjectRecognition.qml</file>
+        <file>ObjectRecognition_Window.qml</file>
+    </qresource>
+</RCC>

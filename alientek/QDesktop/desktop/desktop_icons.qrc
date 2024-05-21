@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/weather_app_icon.png</file>
+        <file>icons/photos_app_icon.png</file>
+        <file>icons/music_app_icon.png</file>
+        <file>icons/camera_app_icon.png</file>
+        <file>icons/settings_app_icon.png</file>
+        <file>icons/file_app_icon.png</file>
+        <file>icons/bat_white.png</file>
+        <file>icons/bat_black.png</file>
+        <file>icons/sensor_app_icon.png</file>
+        <file>icons/calculator_app_icon.png</file>
+        <file>icons/notepad_app_icon.png</file>
+        <file>icons/iotest_app_icon.png</file>
+        <file>icons/player_app_icon.png</file>
+        <file>icons/cardvr_app_icon.png</file>
+        <file>icons/recorder_app_icon.png</file>
+        <file>icons/live555_app_icon.png</file>
+        <file>icons/objectrecognition_app_icon.png</file>
+        <file>icons/facedetection_app_icon.png</file>
+        <file>icons/factorytest_app_icon.png</file>
+    </qresource>
+</RCC>

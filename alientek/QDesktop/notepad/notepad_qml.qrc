@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Notepad_Window.qml</file>
+        <file>FileDelete.qml</file>
+        <file>Notepad.qml</file>
+        <file>TextEditor.qml</file>
+        <file>FileListView.qml</file>
+    </qresource>
+</RCC>

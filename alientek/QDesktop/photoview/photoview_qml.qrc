@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>PhotoView.qml</file>
+        <file>PhotoListView.qml</file>
+        <file>DisplayPhoto.qml</file>
+        <file>PhotoInfo.qml</file>
+        <file>PhotoView_Window.qml</file>
+    </qresource>
+</RCC>
